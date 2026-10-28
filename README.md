@@ -24,12 +24,9 @@
 
 ## 📌 Project Overview
 
-This project focuses on setting up a **virtual cybersecurity and penetration-testing laboratory** using VirtualBox and Kali Linux.
-
-The purpose of the lab is to create a controlled environment where cybersecurity tools, network scanning, reconnaissance, vulnerability assessment, and other security-testing activities can be performed safely and repeatedly.
-
-The lab is configured on a private virtual network so that additional machines can be added later and used as targets for authorized security testing.
-
+This project establishes a virtual cybersecurity and penetration testing lab via VirtualBox and Kali Linux. 
+Designed as a controlled environment, the lab enables safe, repeatable execution of network scanning, reconnaissance, vulnerability assessments, and other security testing tools. 
+Operating on an isolated virtual private network, the setup allows for future scalability to integrate additional target machines for authorized security assessments.
 ---
 
 
@@ -37,15 +34,15 @@ The lab is configured on a private virtual network so that additional machines c
 
 The main objectives of this project are to:
 
-- Install and configure VirtualBox.
-- Install/import Kali Linux as a virtual machine.
-- Create a private **NAT Network** for the cybersecurity lab.
-- Configure network connectivity for Kali Linux.
-- Assign a consistent IP address to the Kali VM.
-- Verify network connectivity and DNS resolution.
-- Take a clean VM snapshot for recovery.
-- Document the complete setup process.
-- Prepare the environment for future cybersecurity projects.
+- Deploy and configure VirtualBox.
+- Import and set up Kali Linux as a virtual machine.
+- Establish a private NAT Network for the cybersecurity lab.
+- Configure network connectivity for the Kali Linux system.
+- Allocate a fixed IP address to the Kali VM.
+- Test network connectivity and DNS resolution.
+- Capture a clean VM snapshot for future recovery.
+- Record the complete installation process.
+- Ready the environment for upcoming cybersecurity projects.
 
 ---
 
@@ -80,15 +77,15 @@ Additional target machines can be added to the same virtual network in future pr
 
 | 🧩 Component       | ⚙️ Configuration   |
 | ------------------ | ------------------  |
-| 🖥️ Host OS         | Windows 10         |
+| 🖥️ Host OS         | Windows 11         |
 | 🧠 Host RAM        | 8 GB               |
-| ⚡ Processor       | Intel Core i7      |
-| 🧰 Hypervisor      | VirtualBox 7.2  |
-| 🐉 Security OS     | Kali Linux 2026.2  |
+| ⚡ Processor       | Intel Core i5      |
+| 🧰 Hypervisor      | VirtualBox 7.2.22  |
+| 🐉 Security OS     | Kali Linux 2025.3  |
 | 🧠 Kali RAM        | 2048 MB            |
 | 🌐 Virtual Network | NAT Network        |
 | 📡 Network Address | 10.0.0.0/24        |
-| 🐧 Kali IP Address | 10.0.0.2/24        |
+| 🐧 Kali IP Address | 10.0.0.15/24        |
 | 🚪 Default Gateway | 10.0.0.1           |
 | 🌍 DNS Server      | 8.8.8.8            |
 | 🔮 Future VM Range | 10.0.0.3–10.0.0.99 |
@@ -117,7 +114,7 @@ A dedicated NAT Network was created in VirtualBox.
 
 Configuration:
 Network Name: NatNetwork
-IPv4 Prefix:  10.0.0.0/24
+IPv4 Prefix:  10.0.0.15/24
 DHCP:         Enabled
 IPv6:         Disabled
 
